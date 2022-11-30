@@ -1,9 +1,9 @@
 <?php
 session_start();
 $message = "";
-$adminData = file_get_contents("./private/users/ADMIN");
+$adminData = file_get_contents("../private/users/ADMIN");
 $adminUsers = explode(",",$adminData);
-if(in_array($_SESSION['name'], $adminUsers)){
+if(!in_array($_SESSION['name'], $adminUsers)){
 	header('Location: ./permissionDenied.php');
 	exit;
 }
