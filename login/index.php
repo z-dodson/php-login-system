@@ -30,7 +30,7 @@ if (isset($_POST['username'], $_POST['password']) ) {
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
-				<input type="text" name="username" placeholder="Username" id="username" required>
+				<input type="text" name="username" placeholder="Username" id="username" autofocus required>
 				<label for="password">
 					<i class="fas fa-lock"></i>
 				</label>
